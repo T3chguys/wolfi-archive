@@ -9,3 +9,5 @@
 > Ein gutes Debian kann nicht gehackt werden.
 
 > Warum passirt mir sowas nicht?
+
+> So ich mach das jetzt. Was machen wir jetzt?
