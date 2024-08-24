@@ -8,6 +8,12 @@
 
 > Ein gutes Debian kann nicht gehackt werden.
 
-> Warum passirt mir sowas nicht?
+> Warum passiert mir sowas nicht?
 
 > So ich mach das jetzt. Was machen wir jetzt?
+
+> Der Server läuft ja und ich bekomm, dass was ich bekomm.
+
+> Im Endeffekt hab ich meine ganze Internet-Connection auf meinem Handy drauf
+
+> Marketing ist ja eigentlich auch nur Werbung
