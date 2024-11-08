@@ -17,3 +17,5 @@
 > Im Endeffekt hab ich meine ganze Internet-Connection auf meinem Handy drauf
 
 > Marketing ist ja eigentlich auch nur Werbung
+
+> Was heist schon offiziell? Das hat doch auch nur irgendjemand mal programmiert.
