@@ -19,3 +19,5 @@
 > Marketing ist ja eigentlich auch nur Werbung
 
 > Was heist schon offiziell? Das hat doch auch nur irgendjemand mal programmiert.
+
+> Wasser ist wie n Zaun eigentlich
