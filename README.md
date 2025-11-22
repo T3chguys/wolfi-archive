@@ -21,3 +21,5 @@
 > Was heist schon offiziell? Das hat doch auch nur irgendjemand mal programmiert.
 
 > Wasser ist wie n Zaun eigentlich
+
+> Man kann die schon unterscheiden. Man muss nur wissen was drin ist
