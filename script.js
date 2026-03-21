@@ -1,5 +1,6 @@
 const app = document.querySelector("#quotes-app");
 const title = document.querySelector("#page-title");
+const count = document.querySelector("#quote-count");
 
 async function loadQuotes() {
   try {
@@ -19,6 +20,10 @@ async function loadQuotes() {
 
     renderQuotes(quotes);
   } catch (error) {
+    if (count) {
+      count.textContent = "Fehler beim Laden";
+    }
+
     app.innerHTML = `<p class="status">Konnte <code>README.md</code> nicht laden. Starte die Seite über einen lokalen Server, damit <code>fetch()</code> funktioniert.</p>`;
     console.error(error);
   }
@@ -67,11 +72,19 @@ function parseMarkdown(markdown) {
 
 function renderQuotes(quotes) {
   if (quotes.length === 0) {
+    if (count) {
+      count.textContent = "0 Zitate";
+    }
+
     app.innerHTML = `<p class="status">Keine Zitate gefunden. Füge in <code>README.md</code> Zeilen mit <code>&gt;</code> hinzu.</p>`;
     return;
   }
 
   const orderedQuotes = [...quotes].reverse();
+
+  if (count) {
+    count.textContent = `${orderedQuotes.length} Zitate`;
+  }
 
   app.replaceChildren(
     ...orderedQuotes.map((quote, index) => {

@@ -9,12 +9,22 @@
   <body>
     <div class="page-shell">
       <header class="hero">
-        <p class="eyebrow">Archiv</p>
-        <h1 id="page-title">Wolfis Weisheiten</h1>
+        <div class="hero-copy">
+          <p class="eyebrow">Archiv</p>
+          <h1 id="page-title">Wolfis Weisheiten</h1>
+          <p class="hero-intro">
+            Wichtige Zitate eines sehr weisen Mannes.
+          </p>
+        </div>
       </header>
 
       <main>
         <section class="quotes-panel" aria-live="polite">
+          <div class="panel-head">
+            <p class="panel-label">Neueste zuerst</p>
+            <p class="panel-count" id="quote-count">Lade…</p>
+          </div>
+
           <div id="quotes-app" class="quotes-grid">
             <p class="status">Lade Zitate…</p>
           </div>
