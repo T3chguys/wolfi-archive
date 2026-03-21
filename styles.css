@@ -1,0 +1,194 @@
+:root {
+  --bg: #f4efe5;
+  --bg-accent: #e6d6bc;
+  --paper: rgba(255, 251, 245, 0.75);
+  --ink: #201815;
+  --muted: #74655f;
+  --line: rgba(32, 24, 21, 0.12);
+  --quote-a: #d0b38c;
+  --quote-b: #bd8d6c;
+  --shadow: 0 24px 80px rgba(44, 28, 18, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua",
+    "URW Palladio L", Georgia, serif;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.72), transparent 30%),
+    radial-gradient(circle at 85% 20%, rgba(208, 179, 140, 0.38), transparent 22%),
+    radial-gradient(circle at 20% 80%, rgba(189, 141, 108, 0.25), transparent 26%),
+    linear-gradient(135deg, var(--bg), #efe5d8 48%, #f8f2ea);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.45;
+  background-image:
+    linear-gradient(rgba(32, 24, 21, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(32, 24, 21, 0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: radial-gradient(circle at center, black 55%, transparent 100%);
+}
+
+.page-shell {
+  width: min(1120px, calc(100vw - 32px));
+  margin: 0 auto;
+  padding: 48px 0 72px;
+}
+
+.hero {
+  position: relative;
+  padding: 48px clamp(24px, 4vw, 48px) 28px;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0;
+  max-width: 10ch;
+  font-size: clamp(3.4rem, 8vw, 7rem);
+  line-height: 0.9;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.quotes-panel {
+  position: relative;
+  padding: clamp(28px, 4vw, 42px);
+  border: 1px solid var(--line);
+  border-radius: 32px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+  overflow: hidden;
+}
+
+.quotes-panel::before {
+  content: "";
+  position: absolute;
+  inset: auto -10% -30% auto;
+  width: 320px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(208, 179, 140, 0.26), transparent 70%);
+}
+
+.quotes-grid {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.status {
+  padding: 22px 20px;
+  border-radius: 22px;
+  border: 1px solid rgba(32, 24, 21, 0.08);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(251, 247, 241, 0.74));
+}
+
+.quote-card {
+  position: relative;
+  padding: 24px 0 26px 76px;
+  border-top: 1px solid rgba(32, 24, 21, 0.1);
+  transform: translateY(24px);
+  opacity: 0;
+  animation: reveal 700ms ease forwards;
+}
+
+.quote-card:first-child {
+  padding-top: 6px;
+  border-top: 0;
+}
+
+.quote-card::before {
+  content: "“";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  color: rgba(32, 24, 21, 0.16);
+  font-size: clamp(3.3rem, 6vw, 5.5rem);
+  line-height: 1;
+}
+
+.quote-card::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 18px;
+  width: 1px;
+  background:
+    linear-gradient(180deg, transparent, rgba(189, 141, 108, 0.45) 20%, rgba(208, 179, 140, 0.2) 80%, transparent);
+  pointer-events: none;
+}
+
+.quote-text {
+  position: relative;
+  margin: 0;
+  max-width: 34ch;
+  font-size: clamp(1.35rem, 2.4vw, 2rem);
+  line-height: 1.32;
+}
+
+.status {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+@keyframes reveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    width: min(100vw - 20px, 1120px);
+    padding-top: 20px;
+    padding-bottom: 32px;
+  }
+
+  .hero {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .quotes-panel {
+    border-radius: 24px;
+    padding: 20px 18px;
+  }
+
+  .quote-card {
+    padding: 18px 0 20px 52px;
+  }
+
+  .quote-card::after {
+    inset: 0 auto 0 12px;
+  }
+
+  .quote-text {
+    max-width: none;
+    font-size: clamp(1.15rem, 5vw, 1.55rem);
+  }
+}
