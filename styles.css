@@ -132,6 +132,24 @@ body::before {
   overflow: hidden;
 }
 
+.site-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px clamp(12px, 2vw, 18px) 0;
+}
+
+.footer-link {
+  color: var(--muted);
+  font-size: 0.95rem;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+}
+
+.footer-link:hover,
+.footer-link:focus-visible {
+  color: var(--ink);
+}
+
 .quotes-panel::before {
   content: "";
   position: absolute;
@@ -328,5 +346,11 @@ body::before {
 
   .quote-card {
     padding-left: 40px;
+  }
+
+  .site-footer {
+    justify-content: flex-start;
+    padding-left: 4px;
+    padding-right: 4px;
   }
 }
