@@ -27,3 +27,6 @@
 > Hier riecht es echt warm
 
 > Nicht, dass das ne Attrappe ist. Ne Schwanz-Attrappe
+
+> Fastboot ist der Chirurg ✂️, Recovery ist der Radiologe 🔍
+Now
