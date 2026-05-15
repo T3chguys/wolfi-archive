@@ -30,3 +30,5 @@
 
 > Fastboot ist der Chirurg ✂️, Recovery ist der Radiologe 🔍
 Now
+
+> Wenn du das so machst, ist halt kacke
