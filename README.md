@@ -38,3 +38,5 @@ Now
 > Aber... Was ist das überhaupt?
 
 > Ich bin geil
+
+> Naja Wetter ist jetzt auch nicht so wichtig
