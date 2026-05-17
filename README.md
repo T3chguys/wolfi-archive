@@ -34,3 +34,7 @@ Now
 > Wenn du das so machst, ist halt kacke
 
 > Das ist so die Welt grad, glaub ich
+
+> Aber... Was ist das überhaupt?
+
+> Ich bin geil
