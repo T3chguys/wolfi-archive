@@ -42,3 +42,5 @@ Now
 > Naja Wetter ist jetzt auch nicht so wichtig
 
 > Das sieht nur so groß aus, weil mein Kopf so klein ist.
+
+> Wenn ich den PC zuhause stehen habe, dann brauch ich doch keine Firewall. Oder?
