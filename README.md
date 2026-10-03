@@ -48,3 +48,5 @@ Now
 > Es geht ja jetzt hier nicht um Schwanzvergleich. Sondern was da raus kommt. 
 
 > Es heißt Switch weil es switched halt die Wege halt. 
+
+> Egal. Sind doch auch nur Zahlen
