@@ -46,3 +46,5 @@ Now
 > Wenn ich den PC zuhause stehen habe, dann brauch ich doch keine Firewall. Oder?
 
 > Es geht ja jetzt hier nicht um Schwanzvergleich. Sondern was da raus kommt. 
+
+> Es heißt Switch weil es switched halt die Wege halt. 
